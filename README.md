@@ -6,3 +6,7 @@ This HTML infographic was inspired by Tim Urban's [Life Calendar](http://waitbut
 
 - Looks nice
 - Clicking on a week toggles it red
+
+## Wishlist
+
+- [ ] Make it squares
