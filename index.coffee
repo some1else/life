@@ -2,8 +2,6 @@ hola = require('jquery')
 lol = require('./lol')
 chroma = require('chroma-js')
 
-console.log 'bundle.js:', lol()
-console.log 'bundle.js: jQuery version', hola.fn.jquery
 
 hola ->
 	length = 90 * 52
