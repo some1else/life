@@ -8,21 +8,44 @@
 </script>
 <script src='bundle.js'></script>
 <style type='text/css'>
+	body {
+		font-family: sans-serif;
+		text-align: center;
+	}
+
+	h1 {
+		margin-top: 5rem;
+	}
+	p {
+		margin-bottom: 4rem;
+	}
 	
 	.week {
 		display: inline-block;
 		width: calc(100%/52);
-		height: 2rem;
+		height: 2rem; line-height: 2rem;
 		outline: 1px solid white;
-		background-color: yellow;
+		background-color: #6E5D7D;
+		color: white;
+		font-weight: 100;
+		text-rendering: optimizeLegibility;
+		-webkit-font-smoothing: antialiased;
+		font-smoothing: antialiased;
+		overflow: hidden;
+		text-align: center;
+	}
+
+	@media (max-width: 720px) {
+		.week .age {
+			display: none;
+		}
 	}
 
 </style>
 </head>
 <body>
-<br/><br/><br/>
-<p>Lorem ipsum</p>
-<br/><br/><br/>
+<h1>your life</h1>
+<p>every square represents 1 week</p>
 <div class='life'>
 	<div class='year'>
 		<div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div>
