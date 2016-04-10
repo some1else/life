@@ -2,6 +2,9 @@
 <head>
 <script src='bundle.js'></script>
 <style type='text/css'>
+	html, body {
+		margin: 0; padding: 0;
+	}
 	body {
 		font-family: sans-serif;
 		text-align: center;
@@ -14,14 +17,22 @@
 		margin-bottom: 4rem;
 	}
 	
+	.life {
+		border: 1px solid white;
+	}
+
 	.week {
 		display: inline-block;
+		box-sizing: border-box;
 		width: calc(100%/52);
 		height: 2rem; line-height: 2rem;
+		/*height: calc(width);*/
+		/*height: 2rem; line-height: 2rem;*/
 		outline: 1px solid white;
-		background-color: #6E5D7D;
+		/*border-radius: 3px;*/
 		color: white;
-		font-weight: 100;
+		font-weight: bold;
+		font-size: small;
 		text-rendering: optimizeLegibility;
 		-webkit-font-smoothing: antialiased;
 		font-smoothing: antialiased;
@@ -29,9 +40,18 @@
 		text-align: center;
 	}
 
+	.interactive {
+		-webkit-transition: background-color 1s;
+		transition: background-color 1s;
+	}
+	.clicked {
+		background-color: #FA8E6D !important;
+	}
+
 	@media (max-width: 720px) {
-		.week .age {
-			display: none;
+		.week {
+			color: transparent;
+			height: 1rem; line-height: 1rem;
 		}
 	}
 
@@ -39,7 +59,7 @@
 </head>
 <body>
 <h1>your life</h1>
-<p>every square represents 1 week</p>
+<p>every rectangle represents 1 week</p>
 <div class='life'>
 	<div class='year'>
 		<div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div><div class='week'></div>
