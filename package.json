@@ -1,0 +1,17 @@
+{
+  "name": "bro",
+  "version": "1.0.0",
+  "description": "browserify test",
+  "main": "index.js",
+  "scripts": {
+    "bundle": "make bundle"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "coffee-script": "^1.10.0",
+    "jquery": "^2.2.3"
+  }
+}
